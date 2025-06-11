@@ -1,0 +1,5 @@
+{
+  "name": "StickerVerse Admin Dashboard",
+  "description": "An administrative dashboard for managing a custom sticker creation website and artist marketplace. Features user, sticker, artist, and order management, along with AI-powered content analysis tools using Gemini API.",
+  "requestFramePermissions": []
+}

@@ -1,0 +1,42 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>StickerVerse Admin</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    // Mock process.env.API_KEY for demonstration if it's not set in the environment
+    // In a real deployment, this would be set through environment variables.
+    if (!window.process) {
+      window.process = { env: {} };
+    }
+    if (!window.process.env.API_KEY) {
+      // THIS IS A MOCK KEY FOR DEMONSTRATION PURPOSES ONLY.
+      // REPLACE WITH A VALID KEY IN A REAL ENVIRONMENT.
+      // DO NOT COMMIT REAL API KEYS TO VERSION CONTROL.
+      // This key will likely not work.
+      window.process.env.API_KEY = "YOUR_GEMINI_API_KEY_HERE"; 
+      console.warn("Using MOCK API_KEY. Please set a valid process.env.API_KEY for Gemini API features.");
+    }
+  </script>
+<script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.1.0/",
+    "react/": "https://esm.sh/react@^19.1.0/",
+    "react": "https://esm.sh/react@^19.1.0",
+    "react-router-dom": "https://esm.sh/react-router-dom@^7.6.2",
+    "recharts": "https://esm.sh/recharts@^2.15.3",
+    "@google/genai": "https://esm.sh/@google/genai@^1.4.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body class="bg-gray-900 text-gray-100">
+  <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
